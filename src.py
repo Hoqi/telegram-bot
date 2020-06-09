@@ -61,6 +61,7 @@ def findLessons(user,message):
                res = prepareStr.lessonResult.format(item['Time'],
                                                     item['Course'],
                                                     item['FIO_Lecturer'],
+                                                    item['room'],
                                                     item['Type'])
                response(user,message,res)
      user.state = 'Main'
